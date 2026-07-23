@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   e2e:
     runs-on: windows-latest
@@ -24,3 +27,14 @@ jobs:
 
       - name: Run WDIO E2E suite
         run: npm run wdio
+
+      - name: Generate Allure report
+        if: always()
+        run: npx allure generate allure-results --clean -o allure-report
+
+      - name: Deploy report to GitHub Pages
+        if: always() && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
