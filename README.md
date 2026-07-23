@@ -1,6 +1,5 @@
 ![E2E Tests](https://github.com/saivarrs/final-task/actions/workflows/e2e.yml/badge.svg)
-Allure report:
-https://saivarrs.github.io/final-task/
+[![Allure Report](https://img.shields.io/badge/Allure-Report-orange?logo=qameta&logoColor=white)](https://saivarrs.github.io/final-task/)
 
 Task description
 
