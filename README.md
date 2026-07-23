@@ -1,3 +1,5 @@
+![E2E Tests](https://github.com/saivarrs/final-task/actions/workflows/e2e.yml/badge.svg)
+
 Task description
 
 "Inventory Logic" Flow
