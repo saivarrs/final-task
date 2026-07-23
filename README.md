@@ -1,4 +1,6 @@
 ![E2E Tests](https://github.com/saivarrs/final-task/actions/workflows/e2e.yml/badge.svg)
+Allure report:
+https://saivarrs.github.io/final-task/
 
 Task description
 
